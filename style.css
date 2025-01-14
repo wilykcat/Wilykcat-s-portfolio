@@ -11,23 +11,25 @@ h1 {
     text-align: center;
     background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-  animation: move 35s linear infinite;
-    color:transparent;
+    -webkit-text-fill-color: transparent;
+    animation: move 35s linear infinite;
+    color: transparent;
     margin: 20px 0;
     transition: all 0.5s ease;
     font-size: 2.5rem;
-    
+
 }
+
 @keyframes move {
-	to {
-		background-position: 4500vh;
-	}
+    to {
+        background-position: 4500vh;
+    }
 }
 
 h2 {
     background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-    background-size: 300% 100%; /* Make the gradient larger than the element to allow smooth animation */
+    background-size: 300% 100%;
+    /* Make the gradient larger than the element to allow smooth animation */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -35,20 +37,25 @@ h2 {
     margin: 20px 0;
     font-size: 1.5rem;
 
-    transition: background-position 0.5s ease; /* Smooth transition when hover ends */
+    transition: background-position 0.5s ease;
+    /* Smooth transition when hover ends */
 }
 
 h2:hover {
-    animation: gradient-move 5s linear infinite; /* Smooth looping animation */
+    animation: gradient-move 5s linear infinite;
+    /* Smooth looping animation */
 }
 
 /* Keyframes for smooth gradient transition */
 @keyframes gradient-move {
     0% {
-        background-position: 0% 50%; /* Start gradient */
+        background-position: 0% 50%;
+        /* Start gradient */
     }
+
     100% {
-        background-position: 100% 50%; /* End gradient */
+        background-position: 100% 50%;
+        /* End gradient */
     }
 }
 
@@ -200,16 +207,22 @@ h2:hover {
 .image-wrapper:hover .description {
     opacity: 1;
 }
+
 @media (max-width: 480px) {
     .grid-container {
         grid-template-columns: 1fr;
         margin: 20px auto;
     }
 
-    .art-image{
+    .image-wrapper {
+        margin: auto;
+    }
+
+    .art-image {
         max-width: 100%;
     }
+
     #close-preview:hover {
-        transform:scale(1.05);
+        transform: scale(1.05);
     }
 }
