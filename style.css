@@ -200,3 +200,16 @@ h2:hover {
 .image-wrapper:hover .description {
     opacity: 1;
 }
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+    }
+
+    .art-image{
+        max-width: 100%;
+    }
+    #close-preview:hover {
+        transform:scale(1.05);
+    }
+}
